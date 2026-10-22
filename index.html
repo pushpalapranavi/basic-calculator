@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator">
+    <header class="header">
+      <h1>Calculator</h1>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <section class="display" aria-live="polite">
+      <div id="expression" class="expression"></div>
+      <output id="result" class="result">0</output>
+    </section>
+
+    <section class="keypad">
+      <button class="key key--fn" data-action="clear" type="button">C</button>
+      <button class="key key--fn" data-action="sign" type="button">+/−</button>
+      <button class="key key--fn" data-action="percent" type="button">%</button>
+      <button class="key key--op" data-op="/" type="button">÷</button>
+
+      <button class="key" data-number="7" type="button">7</button>
+      <button class="key" data-number="8" type="button">8</button>
+      <button class="key" data-number="9" type="button">9</button>
+      <button class="key key--op" data-op="*" type="button">×</button>
+
+      <button class="key" data-number="4" type="button">4</button>
+      <button class="key" data-number="5" type="button">5</button>
+      <button class="key" data-number="6" type="button">6</button>
+      <button class="key key--op" data-op="-" type="button">−</button>
+
+      <button class="key" data-number="1" type="button">1</button>
+      <button class="key" data-number="2" type="button">2</button>
+      <button class="key" data-number="3" type="button">3</button>
+      <button class="key key--op" data-op="+" type="button">+</button>
+
+      <button class="key key--wide" data-number="0" type="button">0</button>
+      <button class="key" data-number="." type="button">.</button>
+      <button class="key key--op" data-action="equals" type="button">=</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
